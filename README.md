@@ -1,5 +1,6 @@
 # Web-Design_Challenge
 Background:
+
 In this assignment I was tasked with building a visualization dashboard website using visualizations from a Project 1. To do this I will be using HTML, CSS, and Bootstrap. 
 
 The website needed to consist of a total of 7 different pages:
