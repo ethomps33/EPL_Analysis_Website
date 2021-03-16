@@ -50,7 +50,28 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="fw-light"><strong>Data Tables</strong></h1>
-                <img src="C:\Users\ethom\Desktop\Data Analytics Bootcamp\Web-Design_Challenge\Resources\assets\images\group code output.PNG" alt="An image of the data table used to generate the plots">
+                <br>
+                <script>
+                    function arrayToTable(tableData) {
+                        var table = $('<table></table>');
+                        $(tableData).each(function (i, rowData) {
+                            var row = $('<tr></tr>');
+                            $(rowData).each(function (j, cellData) {
+                                row.append($('<td>'+cellData+'</td>'));
+                            });
+                            table.append(row);
+                        });
+                        return table;
+                    }
+                
+                    $.ajax({
+                        type: "GET",
+                        url: "Resources\wins.csv",
+                        success: function (data) {
+                            $('body').append(arrayToTable(Papa.parse(data).data));
+                        }
+                    });
+                </script>
             </div>
         </div>
     </div>
