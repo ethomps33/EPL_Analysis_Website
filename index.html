@@ -6,45 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Design Challenge</title>
 
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+    </script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> 
+    </script> 
+    <script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> 
+    </script> 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://ethomps33.github.io/Web-Design_Challenge" id="rcorners2">Premier League Analysis</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="nav justify-content-end">
-            <div class="collapse navbar-collapse" id="rcorners1" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Plots
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="corners.html">Corners</a></li>
-                    <li><a class="dropdown-item" href="fouls.html">Fouls</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="shots.html">Shots</a></li>
-                    <li><a class="dropdown-item" href="goals.html">Goals</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="comparissons.html">Comparisions</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="data.html" tabindex="-1" aria-disabled="true">Data</a>
-                </li>
-              </ul>
-              </form>
-            </div>
-          </div>
-        </ul>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html" >Premier League Analysis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="corners.html">Corners</a>
+                <a class="dropdown-item" href="fouls.html">Fouls</a>
+                
+                <a class="dropdown-item" href="shots.html">Shots</a>
+                <a class="dropdown-item" href="goals.html">Goals</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="bottom.html">Bottom Teams</a>
+                <a class="dropdown-item" href="top.html">Top Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparissons.html">Comparisions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html" tabindex="-1" aria-disabled="true">Data</a>
+            </li>
+          </ul>
+          </form>
+        </div>
+      </div>
+    
+</nav>
     <section class="py-5 text-center container">
         <div class="row">
             <div class="col-md-12">
@@ -193,26 +202,26 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card" style="width: 18rem;">
-            <a href="goals.html">
+            <a href="bottom.html">
               <img src="C:\Users\ethom\Desktop\Data Analytics Bootcamp\Web-Design_Challenge\Resources\assets\images\BottomTeamsTotalpts.png" class="card-img-top" alt="Bottom 3 teams over 4 seasons bar plot">
             </a>
               <div class="card-body">
                 <h5 class="card-title">Relegated Teams Over 4 Seasons</h5>
                 <p class="card-text">The bottom 3 Premier League teams over 4 seasons. The bottom 3 teams are relegated at the end of each season. This is illustrated by a bar plot.</p>
-                <a href="goals.html" class="btn btn-primary" style="background-color: rgb(69, 0, 75);">Relegated Teams</a>
+                <a href="bottom.html" class="btn btn-primary" style="background-color: rgb(69, 0, 75);">Relegated Teams</a>
               </div>
             </div>
       </div>
       <br>
       <div class="col-md-6">
           <div class="card" style="width: 18rem;">
-            <a href="shots.html">
+            <a href="top.html">
               <img  src="C:\Users\ethom\Desktop\Data Analytics Bootcamp\Web-Design_Challenge\Resources\assets\images\TopTeamsTotalpts.png" class="card-img-top" alt="Top 4 teams over 4 seasons bar plot">
             </a>
               <div class="card-body">
                 <h5 class="card-title">Champions League Teams Over 4 Seasons</h5>
                 <p class="card-text">The top 4 Premier League teams over 4 seasons. The top 4 teams qualify for the Champions League at the end of each season. This is illustrated by a bar plot.</p>
-                <a href="shots.html" class="btn btn-primary" style="background-color: rgb(69, 0, 75);">Champions League Teams</a>
+                <a href="top.html" class="btn btn-primary" style="background-color: rgb(69, 0, 75);">Champions League Teams</a>
               </div>
             </div>
           </div>
