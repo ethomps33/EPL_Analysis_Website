@@ -29,6 +29,10 @@ div.card {
     background-color: rgb(69, 0, 75); 
 } 
 
+table {
+  text-align: center;
+}
+
 /* #rcorners1 {
     border-radius: 25px;
     background: rgb(69, 0, 75);
