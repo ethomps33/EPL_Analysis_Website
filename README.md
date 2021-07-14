@@ -19,4 +19,4 @@ The website needed to consist of a total of 7 different pages:
 
 The website is required to be at the top of every page and have a navigation bar. The Navbar should have the name of the site on the left and returns the user to the landing page from any page. It should also contain a dropdown menu on the right of the navbar with the name "Plots" with links to each visualization page. There should be 2 more text links on the right for the "Comparisons" and "Data" pages. Lastly the website was required to be deployed with GitHub pages.
 
-Method:
+# Method:
